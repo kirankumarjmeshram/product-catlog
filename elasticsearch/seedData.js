@@ -12,7 +12,7 @@ const products = [
         storeId: "STORE001",
         price: 1200.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rice_Bags.jpg"
+        imageUrl: "https://images.ctfassets.net/hrltx12pl8hq/6jfxPKUJjYFn56CBzUzvSL/64a8bd8f0ec405ac87f9d4a7076d2eeb/cute-character-3d-image-robot-600nw-2279309245.webp"
     },
     {
         sku: "MILK-1L-002",
@@ -22,7 +22,7 @@ const products = [
         storeId: "STORE002",
         price: 50.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Milk_glass.jpg"
+        imageUrl: "https://images.ctfassets.net/hrltx12pl8hq/64u8O1PmawkQuosJOgfIVj/c9a5863d615d4c065f6dac2438767c9a/mountains-during-sunset-beautiful-natural-260nw-407021107.webp"
     },
     {
         sku: "BREAD-WHT-003",
@@ -32,7 +32,7 @@ const products = [
         storeId: "STORE003",
         price: 40.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Whole_wheat_bread_loaf.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
     },
     {
         sku: "OIL-1L-004",
@@ -42,7 +42,7 @@ const products = [
         storeId: "STORE004",
         price: 200.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bottle_of_sunflower_oil.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
     },
     {
         sku: "SUGAR-5KG-005",
@@ -52,75 +52,172 @@ const products = [
         storeId: "STORE005",
         price: 250.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/White_sugar_granules.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
     },
     {
-        sku: "TEA-500G-006",
-        name: "500g Assam Tea",
-        description: "Strong and refreshing tea leaves",
+        sku: "COFFEE-500G-006",
+        name: "500g Premium Coffee",
+        description: "Rich aroma and deep flavor",
         category: "Beverages",
         storeId: "STORE001",
-        price: 300.0,
+        price: 450.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Darjeeling_tea_leaves.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
     },
     {
-        sku: "COFFEE-200G-007",
-        name: "200g Instant Coffee",
-        description: "Rich aroma and flavor",
+        sku: "TEA-250G-007",
+        name: "250g Assam Tea",
+        description: "Strong and refreshing tea leaves",
         category: "Beverages",
         storeId: "STORE002",
         price: 150.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG"
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
     },
     {
-        sku: "BISCUIT-300G-008",
-        name: "300g Butter Biscuits",
-        description: "Crunchy and delicious butter biscuits",
-        category: "Snacks",
+        sku: "BUTTER-200G-008",
+        name: "200g Unsalted Butter",
+        description: "Creamy and smooth dairy butter",
+        category: "Dairy",
         storeId: "STORE003",
+        price: 100.0,
+        availableForDelivery: true,
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
+    },
+    {
+        sku: "HONEY-500G-009",
+        name: "500g Pure Honey",
+        description: "Raw and organic honey",
+        category: "Grocery",
+        storeId: "STORE004",
+        price: 300.0,
+        availableForDelivery: true,
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
+    },
+    {
+        sku: "JUICE-1L-010",
+        name: "1L Orange Juice",
+        description: "Freshly squeezed orange juice",
+        category: "Beverages",
+        storeId: "STORE005",
+        price: 120.0,
+        availableForDelivery: true,
+        imageUrl: "https://www.shutterstock.com/image-photo/glass-bottle-orange-juice-isolated-on-260nw-1501663535.jpg"
+    },
+    {
+        sku: "EGGS-12-011",
+        name: "12 Pack Eggs",
+        description: "Farm fresh eggs",
+        category: "Dairy",
+        storeId: "STORE001",
         price: 90.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/88/Butter_biscuits.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/cheddar-cheese-block-slices-isolated-on-260nw-1501663538.jpg"
     },
     {
-        sku: "DETERGENT-1KG-009",
-        name: "1KG Washing Powder",
-        description: "Removes stains and keeps clothes fresh",
-        category: "Household",
-        storeId: "STORE004",
+        sku: "CHEESE-250G-012",
+        name: "250g Cheddar Cheese",
+        description: "Rich and creamy cheddar cheese",
+        category: "Dairy",
+        storeId: "STORE002",
+        price: 200.0,
+        availableForDelivery: true,
+        imageUrl: "https://www.shutterstock.com/image-photo/cheddar-cheese-block-slices-isolated-on-260nw-1501663538.jpg"
+    },
+    {
+        sku: "APPLE-1KG-013",
+        name: "1KG Apples",
+        description: "Fresh and juicy apples",
+        category: "Fruits",
+        storeId: "STORE003",
         price: 180.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Washing_powder.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/oranges-isolated-on-white-background-260nw-1501663541.jpg"
     },
     {
-        sku: "SHAMPOO-500ML-010",
-        name: "500ML Herbal Shampoo",
-        description: "Nourishing and sulfate-free shampoo",
-        category: "Personal Care",
-        storeId: "STORE005",
-        price: 350.0,
+        sku: "BANANA-1KG-014",
+        name: "1KG Bananas",
+        description: "Sweet and ripe bananas",
+        category: "Fruits",
+        storeId: "STORE004",
+        price: 60.0,
         availableForDelivery: true,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/df/Shampoo_bottles.jpg"
+        imageUrl: "https://www.shutterstock.com/image-photo/oranges-isolated-on-white-background-260nw-1501663541.jpg"
+    },
+    {
+        sku: "ORANGE-1KG-015",
+        name: "1KG Oranges",
+        description: "Citrus and tangy oranges",
+        category: "Fruits",
+        storeId: "STORE005",
+        price: 150.0,
+        availableForDelivery: true,
+        imageUrl: "https://www.shutterstock.com/image-photo/oranges-isolated-on-white-background-260nw-1501663541.jpg"
+   
+    }]
+
+
+const stores = [
+    {
+        storeId: "STORE001",
+        name: "Downtown Market",
+        location: "New York, NY"
+    },
+    {
+        storeId: "STORE002",
+        name: "Suburban Grocery",
+        location: "Los Angeles, CA"
+    },
+    {
+        storeId: "STORE003",
+        name: "City Center Mall",
+        location: "Chicago, IL"
+    },
+    {
+        storeId: "STORE004",
+        name: "Organic Store",
+        location: "San Francisco, CA"
+    },
+    {
+        storeId: "STORE005",
+        name: "SuperMart",
+        location: "Houston, TX"
     }
 ];
 
 const seedData = async () => {
     try {
-        await client.indices.delete({ index: "products" }).catch(() => {});
+        if (await client.indices.exists({ index: "products" })) {
+            await client.indices.delete({ index: "products" });
+        }
         await client.indices.create({ index: "products", body: require("./mappings.json") });
-
         for (const product of products) {
             await client.index({
                 index: "products",
                 document: product
             });
         }
-
         await client.indices.refresh({ index: "products" });
-
         console.log("Elasticsearch product data seeded successfully.");
+
+        if (await client.indices.exists({ index: "stores" })) {
+            await client.indices.delete({ index: "stores" });
+        }
+        await client.indices.create({
+            index: "stores",
+            body: {
+                mappings: {
+                    properties: {
+                        storeId: { type: "keyword" },
+                        name: { type: "text" },
+                        location: { type: "text" }
+                    }
+                }
+            }
+        });
+        const body = stores.flatMap(doc => [{ index: { _index: "stores" } }, doc]);
+        await client.bulk({ refresh: true, body });
+        console.log("Stores seeded successfully!");
     } catch (error) {
         console.error("Error seeding data:", error);
     }

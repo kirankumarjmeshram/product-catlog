@@ -20,36 +20,6 @@ exports.getAllProducts = async (req, res) => {
 };
 
 
-// exports.getProductDetails = async (req, res) => {
-//     try {
-//         const { storeId, sku } = req.params;
-//         console.log("Searching for:", { storeId, sku });
-
-//         const result = await client.search({
-//             index: "products",
-//             query: {
-//                 bool: {
-//                     must: [
-//                         { term: { "storeId.keyword": storeId } },  
-//                         { term: { "sku.keyword": sku } }          
-//                     ]
-//                 }
-//             }
-//         });
-
-//         console.log("Elasticsearch Response:", JSON.stringify(result, null, 2));
-
-//         if (!result.hits || !result.hits.hits.length) {
-//             return res.status(404).json({ message: "Product not found" });
-//         }
-
-//         res.json(result.hits.hits[0]._source);
-//     } catch (error) {
-//         console.error("Error fetching product details:", error);
-//         res.status(500).json({ message: error.message });
-//     }
-// };
-
 exports.getProductDetails = async (req, res) => {
     try {
         const { storeId, sku } = req.params;
