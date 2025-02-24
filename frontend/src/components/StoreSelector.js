@@ -1,14 +1,26 @@
-import React from "react";
-import { Form } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const StoreSelector = ({ stores, selectedStore, onSelect }) => {
+const StoreSelector = ({ onStoreChange }) => {
+  const [stores, setStores] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/stores") // Ensure backend has this endpoint
+      .then(response => {
+        setStores(response.data); 
+      })
+      .catch(error => console.error("Error fetching stores:", error));
+  }, []);
+
   return (
-    <Form.Select value={selectedStore} onChange={(e) => onSelect(e.target.value)}>
-      <option value="">Select Store</option>
-      {stores.map((store) => (
-        <option key={store} value={store}>{store}</option>
+    <select onChange={(e) => onStoreChange(e.target.value)} className="form-select">
+      <option value="">Select a Store</option>
+      {stores.map(store => (
+        <option key={store.storeId} value={store.storeId}>
+          {store.name} ({store.storeId})
+        </option>
       ))}
-    </Form.Select>
+    </select>
   );
 };
 

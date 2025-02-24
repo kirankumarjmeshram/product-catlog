@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import StoreSelector from "../components/StoreSelector";
 import ProductList from "../components/ProductList";
 
-const stores = ["STORE001", "STORE002", "STORE003"];
-
 const Home = () => {
-  const [selectedStore, setSelectedStore] = useState("");
+  const [selectedStore, setSelectedStore] = useState(null);
+
+  const handleStoreChange = (storeId) => {
+    console.log("Selected Store:", storeId);
+    setSelectedStore(storeId);
+  };
 
   return (
     <div>
-      <h2>Welcome to Our Store</h2>
-      <StoreSelector stores={stores} selectedStore={selectedStore} onSelect={setSelectedStore} />
+      <h2>Select a Store</h2>
+      <StoreSelector onStoreChange={handleStoreChange} />
+      
       {selectedStore && <ProductList storeId={selectedStore} />}
     </div>
   );
