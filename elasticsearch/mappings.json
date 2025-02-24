@@ -1,0 +1,15 @@
+{
+    "mappings": {
+      "properties": {
+        "sku": { "type": "keyword" },
+        "name": { "type": "text" },
+        "description": { "type": "text" },
+        "category": { "type": "keyword" },
+        "storeId": { "type": "keyword" },
+        "price": { "type": "float" },
+        "availableForDelivery": { "type": "boolean" },
+        "imageUrl": { "type": "text" }
+      }
+    }
+  }
+  
